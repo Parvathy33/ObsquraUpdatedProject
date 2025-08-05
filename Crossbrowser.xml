@@ -1,0 +1,34 @@
+<suite name="CrobrowserTestSuite">
+
+	<listeners>
+		<listener class-name="listeners.RetryListener" />
+
+
+	</listeners>
+	<test name="ChromeTest">
+	<parameter name="Browser" value="Chrome"></parameter>
+		<classes>
+		<class name="testClasses.HomePageTestClass" />
+			<!--<class name="testClasses.LoginpageTestClass" />
+					<class name="testClasses.ExpensePageTestClass" /> 
+			
+			<class name="testClasses.UserManagementTestClass" />
+			
+			<class name="testClasses.CustomerPageTestClass" />-->
+		</classes>
+	</test>
+	<test name="FirefoxTest">
+	<parameter name="Browser" value="Firefox"></parameter>
+
+		<classes>
+		<class name="testClasses.HomePageTestClass" />
+			<!--<class name="testClasses.LoginpageTestClass" />
+					<class name="testClasses.ExpensePageTestClass" /> 
+			
+			<class name="testClasses.UserManagementTestClass" />
+			
+			<class name="testClasses.CustomerPageTestClass" />-->
+		</classes>
+	</test>
+</suite> <!--
+Suite -->
